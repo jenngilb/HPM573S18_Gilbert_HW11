@@ -1,0 +1,7 @@
+print("Hmwk Q1, Part 1:")
+print("Annual all-cause mortality = 18/1000")
+print("-ln(1-(18/1000))= 0.01816397 = all-cause mortality modeling rate")
+print("Annual death rate for stroke = 36.2/100,000")
+print("-ln(1-(36.2/100,000))= 0.00036207 = stroke annual mortality modeling rate")
+print("Non-stroke associated annual mortality rate = (18*100) – 36.2 per 100,000 = 1763.8/100,000")
+print("-ln(1-(1763.8/100,000)) = 0.01779540311 = non-stroke associated annual mortality modeling rate")
