@@ -5,7 +5,7 @@ DELTA_T = 1         # years (length of time step, how frequently you look at the
 DISCOUNT = 0.03
 
 ADD_BACKGROUND_MORT = True  # if background mortality should be added
-DELTA_T = 1/5       # years - unsure if this is correct way to set it
+DELTA_T = 1/52       # years - unsure if this is correct way to set it
 
 PSA_ON = True      # if probabilistic sensitivity analysis is on
 

@@ -11,6 +11,7 @@ class HealthStats(Enum):
     STROKE = 1
     POST_STROKE = 2
     DEATH = 3
+    BACKGROUND_DEATH = 4
 
 
 class Therapies(Enum):
@@ -115,8 +116,8 @@ def add_background_mortality(prob_matrix):
     rate_matrix = MarkovCls.continuous_to_discrete(prob_matrix, 1)
     # add mortality rates
     for s in HealthStats:
-        if s not in [HealthStats.POST_STROKE, HealthStats.DEATH]:
-            rate_matrix[s.value][HealthStats.DEATH.value] \
+        if s not in [HealthStats.DEATH, HealthStats.BACKGROUND_DEATH]:
+            rate_matrix[s.value][HealthStats.BACKGROUND_DEATH.value] \
                 = -np.log(1 - Data.ANNUAL_PROB_BACKGROUND_MORT)
 
     # convert back to transition probability matrix
