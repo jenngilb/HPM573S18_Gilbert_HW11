@@ -20,3 +20,6 @@ print("-ln(1-(0.01823758754)/(1-.8)) = 0.09561695832 = annual rate of transition
 print("-ln(1-(0.01823758754)/(1-.2)) = 0.02306085366 = annual rate of transition from post-stroke to stroke death")
 print("Part 6:")
 print("-ln(1-(0.01823758754)/(52/1) = 0.00035078435 = annual rate of transition from stroke to post-stroke")
+
+print("Hmwk Q2")
+print("")
