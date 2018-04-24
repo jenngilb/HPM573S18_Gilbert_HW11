@@ -1,11 +1,10 @@
 POP_SIZE = 2000     # cohort population size
 SIM_LENGTH = 50   # length of simulation (years)
 ALPHA = 0.05        # significance level for calculating confidence intervals
-DELTA_T = 15         # years (length of time step, how frequently you look at the patient)
 DISCOUNT = 0.03
 
 ADD_BACKGROUND_MORT = True  # if background mortality should be added
-DELTA_T = 5       # years - unsure if this is correct way to set it
+DELTA_T = 15       # years - unsure if this is correct way to set it
 
 PSA_ON = True      # if probabilistic sensitivity analysis is on
 
@@ -19,6 +18,7 @@ TRANS_MATRIX = [
     [0.0,   0.0,    0.0,    0.0,    1.0],   # All-cause dead
     ]
 
+#Use RR code from class to modify TRANSITION MATRIX, or build a new matrix and incorporate it with the parameter class.
 # anticoagulation relative risk in reducing stroke incidence and stroke death while in “Post-Stroke”
 RR_STROKE = 0.65
 # anticoagulation relative risk in increasing mortality due to bleeding is 1.05.

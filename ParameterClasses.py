@@ -1,9 +1,10 @@
 from enum import Enum
+import scipy.stats as stat
+import math as math
 import InputData as Data
 import scr.MarkovClasses as MarkovCls
 import scr.RandomVariantGenerators as Random
 import scr.FittingProbDist_MM as Est
-
 
 class HealthStats(Enum):
     """ health states of patients with HIV """
