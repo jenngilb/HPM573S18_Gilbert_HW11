@@ -1,4 +1,4 @@
-print("Hmwk Q1, Part 1:")
+print("Q1, Part 1:")
 print("Annual all-cause mortality = 18/1000")
 print("-ln(1-(18/1000))= 0.01816397 = all-cause mortality modeling rate")
 print("Annual death rate for stroke = 36.2/100,000")
@@ -20,6 +20,6 @@ print("-ln(1-(0.01823758754)/(1-.8)) = 0.09561695832 = annual rate of transition
 print("-ln(1-(0.01823758754)/(1-.2)) = 0.02306085366 = annual rate of transition from post-stroke to stroke death")
 print("Part 6:")
 print("-ln(1-(0.01823758754)/(52/1) = 0.00035078435 = annual rate of transition from stroke to post-stroke")
+print("See Parameters file for Q2")
+print("Run the RunMarkovModel file and RunMarkovTreat file for Qs 3-5")
 
-print("Run the RunMarkovModel file for Hmwk Q3")
-print("")

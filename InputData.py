@@ -9,8 +9,8 @@ DELTA_T = 5       # years - unsure if this is correct way to set it
 
 PSA_ON = True      # if probabilistic sensitivity analysis is on
 
-
-# transition matrix
+#hmwk q2
+#transition matrix for anticoagulation
 TRANS_MATRIX = [
     [(1-0.16251892949-0.01680711831-0.01779540311),  0.16251892949,   0.01680711831,    0.01779540311],   # Well
     [0,     0.0,    0.00035078435,    (1-0.00035078435)],   # Stroke
