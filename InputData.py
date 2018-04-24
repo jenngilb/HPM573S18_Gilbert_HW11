@@ -1,21 +1,22 @@
 POP_SIZE = 2000     # cohort population size
 SIM_LENGTH = 50   # length of simulation (years)
 ALPHA = 0.05        # significance level for calculating confidence intervals
-DELTA_T = 1         # years (length of time step, how frequently you look at the patient)
+DELTA_T = 15         # years (length of time step, how frequently you look at the patient)
 DISCOUNT = 0.03
 
 ADD_BACKGROUND_MORT = True  # if background mortality should be added
-DELTA_T = 1/52       # years - unsure if this is correct way to set it
+DELTA_T = 5       # years - unsure if this is correct way to set it
 
 PSA_ON = True      # if probabilistic sensitivity analysis is on
 
 
 # transition matrix
 TRANS_MATRIX = [
-    [0.75,  0.15,   0.0,    0.1],   # Well
-    [0,     0.0,    1.0,    0.0],   # Stroke
-    [0,     0.25,   0.55,   0.2],   # Post-Stroke
-    [0.0,   0.0,    0.0,    1.0],   # Dead
+    [(1-0.16251892949-0.01680711831-0.01779540311),  0.16251892949,   0.01680711831,    0.01779540311],   # Well
+    [0,     0.0,    0.00035078435,    (1-0.00035078435)],   # Stroke
+    [0,     0.09561695832,   0.02306085366,   (1.0-0.02306085366-0.09561695832)],   # Post-Stroke
+    [0.0,   0.0,    0.0,    1.0,    0.0],   # Dead
+    [0.0,   0.0,    0.0,    0.0,    1.0],   # All-cause dead
     ]
 
 # anticoagulation relative risk in reducing stroke incidence and stroke death while in “Post-Stroke”

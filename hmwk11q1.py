@@ -21,5 +21,5 @@ print("-ln(1-(0.01823758754)/(1-.2)) = 0.02306085366 = annual rate of transition
 print("Part 6:")
 print("-ln(1-(0.01823758754)/(52/1) = 0.00035078435 = annual rate of transition from stroke to post-stroke")
 
-print("Hmwk Q2")
+print("Run the RunMarkovModel file for Hmwk Q3")
 print("")
