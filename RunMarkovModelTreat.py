@@ -4,6 +4,7 @@ import SupportMarkovModel as SupportMarkov
 import scr.SamplePathClasses as PathCls
 import scr.FigureSupport as Figs
 
+print("Hmwk Qs 3-5")
 # create and simulate cohort
 cohort = MarkovCls.Cohort(
     id=1,

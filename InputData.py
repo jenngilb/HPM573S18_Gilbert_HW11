@@ -26,7 +26,7 @@ RR_BLEEDING = 1.05
 
 HEALTH_UTILITY = [
     1,  # well
-    0.8865,  # stroke ONLY WHEN THE CYCLE LENGTH IS 1 YEAR
+    0.2,  # stroke
     0.9,  # post-stroke
     0  # dead
 ]
@@ -38,7 +38,7 @@ HEALTH_COST = [
     0
 ]
 
-Anticoag_COST = 2000
+Anticoag_COST = 750
 
 # annual probability of background mortality (number per year per 1,000 population)
 ANNUAL_PROB_BACKGROUND_MORT = 18 / 1000

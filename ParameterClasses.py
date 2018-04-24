@@ -144,7 +144,7 @@ def calculate_prob_matrix_combo(matrix_mono, combo_rr):
 
     # diagonal elements are calculated to make sure the sum of each row is 1
     for s in HealthStats:
-        if s not in [HealthStats.HIV_DEATH, HealthStats.BACKGROUND_DEATH]:
+        if s not in [HealthStats.DEATH, HealthStats.BACKGROUND_DEATH]:
             matrix_combo[s.value][s.value] = 1 - sum(matrix_combo[s.value][s.value + 1:])
 
     return matrix_combo
