@@ -20,9 +20,9 @@ TRANS_MATRIX = [
 
 #Use RR code from class to modify TRANSITION MATRIX, or build a new matrix and incorporate it with the parameter class.
 # anticoagulation relative risk in reducing stroke incidence and stroke death while in “Post-Stroke”
-RR_STROKE = 0.65
+RR_STROKE = 0.25
 # anticoagulation relative risk in increasing mortality due to bleeding is 1.05.
-RR_BLEEDING = 1.05
+RR_BLEEDING = .05
 
 HEALTH_UTILITY = [
     1,  # well
